@@ -5,11 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HomeCtrl {
+public class ServicesCtrl {
 
-    @GetMapping("/")
-    public String greeting(Model model) {
-        return "index";
+    @GetMapping("/services")
+    public String aboutPage(Model model) {
+        return "services";
     }
 
 }
