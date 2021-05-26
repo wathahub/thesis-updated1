@@ -1,0 +1,61 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main{
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.navbar{
+  width: 5rem;
+  height: 100vh;
+  position: fix;
+  background: red;
+
+}
+
+
+
+header{
+  z-index: 1;
+  position: fixed;
+  background: orange;
+  width: calc(100% - 0%);
+  top: 0;
+  height: 70px;
+}
+
+.left_area h3{
+  padding-left: 20px;
+  color: #fff;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.left_area span{
+  color: #19B3D3;
+}
+
+.logout_btn{
+  padding: 5px;
+  background: orange;
+  text-decoration: none;
+  float: right;
+  margin-top: -30px;
+  margin-right: 40px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.logout_btn:hover{
+  background: grey;
+}
