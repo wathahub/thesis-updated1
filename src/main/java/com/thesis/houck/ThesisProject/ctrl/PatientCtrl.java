@@ -8,22 +8,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/patient")
 public class PatientCtrl {
 
-    //TODO: ask bry about diagnosis page for patient
-    //TODO: ask bry about services page for patient
+
 
     @GetMapping("/appointment")
     public String patientAppointmentPage(){
-        return "dashboard/patient/appointment";
+        return "dashboard/patient/Appointment";
     }
 
     @GetMapping("/assessment")
     public String patientAssessmentPage(){
-        return "dashboard/patient/assessment";
+        return "dashboard/patient/Assessment";
     }
 
     @GetMapping("/dashboard")
     public String patientDashPage(){
-        return "dashboard/patient/patientDash";
+        return "dashboard/patient/PatientDash";
+    }
+
+    @GetMapping("/diagnosis")
+    public String patientDiagnosisPage() { return "dashboard/patient/Diagnosis"; }
+
+    @GetMapping("/services")
+    public String patientServicesPage(){
+        return "dashboard/patient/Services";
     }
 
 }
